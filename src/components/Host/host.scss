@@ -1,8 +1,42 @@
 .host {
     display: flex;
     gap: 10px;
+    align-items: center;
 
-    @media (min-width: 768px) {}
+    &_name {
+        min-width: 93px;
+        height: 33px;
+        text-align: right;
+        color: #FF6060;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: pre-line;
 
-    @media (min-width: 1024px) {}
+        @media (min-width: 768px) {
+            font-size: 15px;
+            height: 43px;
+        }
+
+        @media (min-width: 1024px) {
+            height: 52px;
+            font-size: 18px;
+        }
+    }
+
+    &_img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 64px;
+
+        @media (min-width: 768px) {
+            width: 48px;
+            height: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 64px;
+            height: 64px;
+        }
+    }
 }

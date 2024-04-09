@@ -1,2 +1,2 @@
-.host{display:flex;gap:10px}
+.host{display:flex;gap:10px;align-items:center}.host_name{min-width:93px;height:33px;text-align:right;color:#ff6060;font-size:12px;font-weight:500;white-space:pre-line}@media(min-width: 768px){.host_name{font-size:15px;height:43px}}@media(min-width: 1024px){.host_name{height:52px;font-size:18px}}.host_img{width:32px;height:32px;-o-object-fit:cover;object-fit:cover;border-radius:64px}@media(min-width: 768px){.host_img{width:48px;height:48px}}@media(min-width: 1024px){.host_img{width:64px;height:64px}}
 /*# sourceMappingURL=host.min.css.map */

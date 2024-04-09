@@ -3,7 +3,8 @@ import './host.scss'
 function Host({host}) {
     return (
         <div className="host">
-            {host.name}
+            <div className="host_name">{host.name.replace(/ /g, ' \n')}</div>
+            <img className="host_img" src={host.picture} alt={`Photographie de $`} />
         </div>
     )
 } 
