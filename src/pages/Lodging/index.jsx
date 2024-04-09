@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams , useNavigate } from 'react-router-dom'
 
 import Collapse from '../../components/Collapse'
-import Tags from '../../components/Tags'
+import Tags from '../../components/Tags/index.jsx'
 
 import Slideshow from '../../components/Slideshow'
 
@@ -44,7 +44,6 @@ function Lodging() {
                         <div className="infogroup_part1_title">{Lodging.title}</div>
                         <div className="infogroup_part1_place">{Lodging.location}</div>
                         <Tags itemTags={Lodging.tags} />
-                        {Lodging.Tags}
                     </div>
                     <div className="infogroup_part2">
                         <div className="infogroup_part2_host">{console.log(Lodging.host)}</div>

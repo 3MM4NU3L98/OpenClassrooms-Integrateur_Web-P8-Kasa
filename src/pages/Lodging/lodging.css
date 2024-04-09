@@ -71,12 +71,14 @@
 }
 .lodging .infogroup_part2 {
   display: flex;
+  flex-direction: row-reverse;
+  margin-top: 16px;
 }
-.lodging .infogroup_part2_host {
-  background-color: #3be961;
-}
-.lodging .infogroup_part2_rating {
-  background-color: blueviolet;
+@media (min-width: 1024px) {
+  .lodging .infogroup_part2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .lodging .collapsegroup {
   display: flex;
