@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { useParams , useNavigate } from 'react-router-dom'
 
 import Collapse from '../../components/Collapse'
-import Tags from '../../components/Tags/index.jsx'
+import Tags from '../../components/Tags/'
+import Host from '../../components/Host'
 
 import Slideshow from '../../components/Slideshow'
 
@@ -32,7 +33,7 @@ function Lodging() {
                 Redirection('../../Error')
             }
         }) 
-    },[])
+    },[idLodging, Redirection ])
 
 
     return (
@@ -46,8 +47,9 @@ function Lodging() {
                         <Tags itemTags={Lodging.tags} />
                     </div>
                     <div className="infogroup_part2">
-                        <div className="infogroup_part2_host">{console.log(Lodging.host)}</div>
-                        <div className="infogroup_part2_rating">{Lodging.rating}</div>
+                        <Host host={Lodging.host} />
+
+<div className="infogroup_part2_rating">{Lodging.rating}</div>
                     </div>
                 </div>
                 <div className="collapsegroup">
