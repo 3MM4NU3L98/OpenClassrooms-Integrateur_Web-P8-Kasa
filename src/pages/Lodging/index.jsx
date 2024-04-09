@@ -4,7 +4,7 @@ import { useParams , useNavigate } from 'react-router-dom'
 import Collapse from '../../components/Collapse'
 import Tags from '../../components/Tags/'
 import Host from '../../components/Host'
-
+import Rating from '../../components/Rating'
 import Slideshow from '../../components/Slideshow'
 
 import './lodging.scss'
@@ -48,8 +48,7 @@ function Lodging() {
                     </div>
                     <div className="infogroup_part2">
                         <Host host={Lodging.host} />
-
-<div className="infogroup_part2_rating">{Lodging.rating}</div>
+                        <Rating rating={Lodging.rating} />
                     </div>
                 </div>
                 <div className="collapsegroup">
