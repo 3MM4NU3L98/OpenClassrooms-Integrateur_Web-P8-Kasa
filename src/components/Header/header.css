@@ -50,4 +50,7 @@ header nav {
     font-size: 24px;
   }
 }
+header .linkDecoration {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=header.css.map */
