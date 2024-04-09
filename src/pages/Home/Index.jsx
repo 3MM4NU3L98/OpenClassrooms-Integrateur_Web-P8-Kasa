@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Landscape1 from '../../assets/IMG.jpg'
+import Landscape1 from '../../assets/coast.jpg'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 

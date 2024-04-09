@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner'
-import Landscape2 from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg'
+import Landscape2 from '../../assets/mountain.jpg'
 import Collapse from '../../components/Collapse'
 import './about.scss'
 
