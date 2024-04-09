@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+    max-width: 1240px;
+    width: calc(100% - 40px);
+    height: 47px;
+
+    @media (min-width : 768px) {
+        margin-top: 32px;
+        height: 58px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 45px;
+        height: 68px;
+    }
+
+    img {
+        height: 47px;
+
+        @media (min-width : 768px) {
+            height: 47px;
+        }
+
+        @media (min-width: 1024px) {
+            height: 68px;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @media (min-width : 768px) {
+            text-transform: none;
+            font-size: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 24px;
+        }
+    }
+}

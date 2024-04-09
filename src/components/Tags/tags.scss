@@ -1,0 +1,33 @@
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    span {
+        border-radius: 5px;
+        background: hsl(0, 100%, 69%);
+        min-width: 84px;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 10px;
+        color: #FFF;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+
+        @media (min-width: 768px) {
+            min-width: 99px;
+            height: 21px;
+            line-height: 21px;
+            font-size: 12px;
+        }
+
+        @media (min-width: 1024px) {
+            min-width: 115px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+}

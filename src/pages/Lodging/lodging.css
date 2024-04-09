@@ -1,0 +1,92 @@
+.lodging {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 20px);
+  max-width: 1240px;
+  margin: 27px 10px;
+}
+@media (min-width: 768px) {
+  .lodging {
+    margin: 33px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .lodging {
+    margin: 50px 10px;
+  }
+}
+.lodging .infogroup {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 13px 0;
+}
+@media (min-width: 768px) {
+  .lodging .infogroup {
+    margin: 22px 0 19px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .lodging .infogroup {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 24px 0;
+  }
+}
+.lodging .infogroup_part1_title {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .lodging .infogroup_part1_title {
+    font-size: 27px;
+    margin-bottom: 2px;
+  }
+}
+@media (min-width: 1024px) {
+  .lodging .infogroup_part1_title {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+.lodging .infogroup_part1_place {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .lodging .infogroup_part1_place {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .lodging .infogroup_part1_place {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+.lodging .infogroup_part2 {
+  display: flex;
+}
+.lodging .infogroup_part2_host {
+  background-color: #3be961;
+}
+.lodging .infogroup_part2_rating {
+  background-color: blueviolet;
+}
+.lodging .collapsegroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .lodging .collapsegroup {
+    flex-direction: row;
+    gap: 76px;
+  }
+}
+/*# sourceMappingURL=lodging.css.map */

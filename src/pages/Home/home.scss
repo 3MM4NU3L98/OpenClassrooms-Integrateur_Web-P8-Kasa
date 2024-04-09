@@ -1,0 +1,37 @@
+.home {
+    flex: 1;
+    margin: 27px 20px 27px 20px;
+    max-width: 1240px;
+
+    @media (min-width : 768px) {
+        margin: 38px 20px;
+    }
+
+    @media (min-width: 1024px) {
+        margin: 50px 20px;
+    }
+
+    .listCard {
+        display: grid;
+        margin-top: 22px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @media (min-width : 768px) {
+            margin-top: 32px;
+            grid-template-columns: 1fr 1fr;
+            background-color: #f6f6f6;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-top: 43px;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 56px 50px 43px 50px;
+            border-radius: 25px;
+            row-gap: 50px;
+            column-gap: 60px;
+        }
+    }
+}
