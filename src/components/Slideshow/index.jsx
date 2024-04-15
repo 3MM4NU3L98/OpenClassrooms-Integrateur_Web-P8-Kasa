@@ -22,19 +22,20 @@ function Slideshow ({pictures}) {
                 src={pictures[slidesIndex]}
                 alt= {`Photographie ${slidesIndex + 1} sur ${pictures.length}`}
              />
-            <div className='slideshow_arrow'>
-                <img onClick={() => slide('backward')}
-                    className='slideshow_arrow_backward'
-                    src={ArrowBackward}
-                    alt="Flèche vers la photographie précédante"
-                />
-                <img onClick={() => slide('forward')}
-                    className='slideshow_arrow_forward'
-                    src={ArrowForward}
-                    alt="Flèche vers la photographie suivante"
-                />
-            </div>
-            <div className="slideshow_caption">{`${slidesIndex + 1}/${pictures.length}`}</div>
+            { pictures.length !== 1 && 
+                <>  
+                    <div className='slideshow_arrow'>
+                        <img onClick={() => slide('backward')}
+                            className='slideshow_arrow_backward'
+                            src={ArrowBackward}
+                            alt="Flèche vers la photographie précédante" />
+                        <img onClick={() => slide('forward')}
+                            className='slideshow_arrow_forward'
+                            src={ArrowForward}
+                            alt="Flèche vers la photographie suivante" />
+                    </div><div className="slideshow_caption">{`${slidesIndex + 1}/${pictures.length}`}</div>
+                </>
+            }
         </div> 
     )
 }
