@@ -11,7 +11,7 @@ function Header() {
               </Link>
           <nav>
               <Link to="/" className={location.pathname === "/" ? 'linkDecoration' : ''}>Accueil</Link>
-              <Link to="/about" className={location.pathname === "/about" ? 'linkDecoration' : ''}>A Propos</Link>
+              <Link to="/about" className={location.pathname === "/about" ? 'linkDecoration' : ''}>À Propos</Link>
           </nav>
       </header>
     )
