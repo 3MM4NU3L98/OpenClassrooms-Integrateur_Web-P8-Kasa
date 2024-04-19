@@ -4,8 +4,7 @@ import './collapse.scss'
 
 const Collapse = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const toggleCollapse = () => { setIsOpen(!isOpen)
-}
+  const toggleCollapse = () => { setIsOpen(!isOpen) }
 
   return (
     <div className='collapse'>

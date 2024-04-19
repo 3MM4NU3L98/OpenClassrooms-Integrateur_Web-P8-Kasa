@@ -33,7 +33,8 @@ function Slideshow ({pictures}) {
                             className='slideshow_arrow_forward'
                             src={ArrowForward}
                             alt="Flèche vers la photographie suivante" />
-                    </div><div className="slideshow_caption">{`${slidesIndex + 1}/${pictures.length}`}</div>
+                    </div>
+                    <div className="slideshow_caption">{`${slidesIndex + 1}/${pictures.length}`}</div>
                 </>
             }
         </div> 
